@@ -526,7 +526,7 @@ public class UserAdd extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void btnupActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnupActionPerformed
-       update();
+       update(); // update code
     }//GEN-LAST:event_btnupActionPerformed
 
     /**
