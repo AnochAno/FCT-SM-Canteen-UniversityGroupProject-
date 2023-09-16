@@ -193,6 +193,11 @@ public class adminAdd extends javax.swing.JFrame {
         btnup.setIcon(new javax.swing.ImageIcon("C:\\Users\\Anojan\\Desktop\\SmartCanteen\\src\\Icons\\login.png")); // NOI18N
         btnup.setText("Update");
         btnup.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 0, 0), new java.awt.Color(153, 0, 0), null, null));
+        btnup.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnupActionPerformed(evt);
+            }
+        });
         jPanel1.add(btnup, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 260, 90, 50));
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
@@ -346,6 +351,34 @@ public class adminAdd extends javax.swing.JFrame {
             }
     
     }
+       public void update() {
+    String sql = "UPDATE admin SET adminName=?, Email=?, phone=?, admin_Catagary=?, adPassword=? WHERE AdminID=?";
+    try {
+        Class.forName("com.mysql.cj.jdbc.Driver");
+        Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/fct_smcanteen", "root", "");
+        PreparedStatement pst = conn.prepareStatement(sql);
+
+        pst.setString(1, jTextField2.getText()); 
+        pst.setString(2, jTextField3.getText()); 
+        pst.setString(3, jTextField4.getText()); 
+        pst.setString(4, jTextField5.getText()); 
+        pst.setString(5, jTextField6.getText()); 
+        pst.setString(6, jTextField1.getText()); 
+
+        int rowsAffected = pst.executeUpdate();
+
+        if (rowsAffected > 0) {
+            JOptionPane.showMessageDialog(this, "Admin ID: " + jTextField1.getText() + " Details Successfully Updated in The Database");
+            ref();
+            rease();
+        } else {
+            JOptionPane.showMessageDialog(this, "No records were updated for Admin ID: " + jTextField1.getText());
+        }
+    } catch (Exception ex) {
+        JOptionPane.showMessageDialog(this, "Error while updating: \n" + ex);
+    }
+}
+
     
     
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
@@ -478,7 +511,7 @@ public class adminAdd extends javax.swing.JFrame {
     }//GEN-LAST:event_btndeleteActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
+        save();
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
@@ -493,6 +526,10 @@ public class adminAdd extends javax.swing.JFrame {
         System.exit(0);
    }
     }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void btnupActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnupActionPerformed
+        update();
+    }//GEN-LAST:event_btnupActionPerformed
 
     /**
      * @param args the command line arguments
