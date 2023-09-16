@@ -1,2 +1,2 @@
 # FCT-SM-Canteen
-Java and mySql
+IOT base Project
