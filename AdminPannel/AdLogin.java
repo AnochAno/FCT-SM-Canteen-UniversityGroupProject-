@@ -53,7 +53,7 @@ public class AdLogin extends javax.swing.JFrame {
 
         jLabel4.setBackground(new java.awt.Color(255, 255, 204));
         jLabel4.setForeground(new java.awt.Color(102, 102, 255));
-        jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\Anojan\\Desktop\\SmartCanteen\\src\\Icons\\OIP.jpg")); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/FCT-SM-Canteen/Icons/OIP.jpg"))); // NOI18N
         jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 400, 400));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 6, -1, -1));
@@ -95,7 +95,7 @@ public class AdLogin extends javax.swing.JFrame {
         jPanel2.add(jCheckBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 260, -1, -1));
 
         btnsave.setFont(new java.awt.Font("Segoe UI", 3, 14)); // NOI18N
-        btnsave.setIcon(new javax.swing.ImageIcon("C:\\Users\\Anojan\\Desktop\\pallai\\Pallai_Library\\src\\Icons\\Icons\\bms\\login.png")); // NOI18N
+        btnsave.setIcon(new javax.swing.ImageIcon(getClass().getResource("/FCT-SM-Canteen/Icons/login.png"))); // NOI18N
         btnsave.setText("Login ");
         btnsave.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -105,7 +105,7 @@ public class AdLogin extends javax.swing.JFrame {
         jPanel2.add(btnsave, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 310, 120, -1));
 
         jButton3.setFont(new java.awt.Font("Segoe UI", 3, 14)); // NOI18N
-        jButton3.setIcon(new javax.swing.ImageIcon("C:\\Users\\Anojan\\Desktop\\pallai\\Pallai_Library\\src\\Icons\\Icons\\bms\\close Jframe.png")); // NOI18N
+        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/FCT-SM-Canteen/Icons/close Jframe.png"))); // NOI18N
         jButton3.setText("Cancel");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -114,8 +114,7 @@ public class AdLogin extends javax.swing.JFrame {
         });
         jPanel2.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 310, 120, -1));
 
-        jLabel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\Anojan\\Desktop\\SmartCanteen\\src\\Icons\\login ani.gif")); // NOI18N
-        jLabel3.setText("jLabel3");
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/FCT-SM-Canteen/Icons/login ani.gif"))); // NOI18N
         jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 60, 279, -1));
 
         getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(413, 6, 383, 400));
