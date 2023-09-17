@@ -45,7 +45,7 @@
         <Component class="javax.swing.JLabel" name="jLabel4">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\Anojan\Desktop\SmartCanteen\src\Icons\R.jpg"/>
+              <Image iconType="3" name="/FCT-SM-Canteen/Icons/R.jpg"/>
             </Property>
           </Properties>
           <Constraints>
@@ -151,7 +151,7 @@
               <Font name="Segoe UI" size="14" style="3"/>
             </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\Anojan\Desktop\pallai\Pallai_Library\src\Icons\Icons\bms\login.png"/>
+              <Image iconType="3" name="/FCT-SM-Canteen/Icons/login.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Login "/>
           </Properties>
@@ -170,7 +170,7 @@
               <Font name="Segoe UI" size="14" style="3"/>
             </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\Anojan\Desktop\pallai\Pallai_Library\src\Icons\Icons\bms\close Jframe.png"/>
+              <Image iconType="3" name="/FCT-SM-Canteen/Icons/close Jframe.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Cancel"/>
           </Properties>
@@ -186,9 +186,8 @@
         <Component class="javax.swing.JLabel" name="jLabel3">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\Anojan\Desktop\SmartCanteen\src\Icons\login ani.gif"/>
+              <Image iconType="3" name="/FCT-SM-Canteen/Icons/login ani.gif"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="jLabel3"/>
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">

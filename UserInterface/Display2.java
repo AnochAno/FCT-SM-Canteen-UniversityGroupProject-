@@ -30,12 +30,12 @@ import javax.swing.JFileChooser;
  */
 
 
-public final class Display extends javax.swing.JFrame {    
+public final class Display2 extends javax.swing.JFrame {    
     
     private double total = 0.0;
     public int x = 0;
     
-    public Display() {
+    public Display2() {
         initComponents();
         
         SimpleDateFormat dformaat = new SimpleDateFormat("EEE, yyyy-MM-dd");
@@ -87,7 +87,7 @@ public final class Display extends javax.swing.JFrame {
             Class.forName("com.mysql.cj.jdcb.Driver");
             Connection con  = DriverManager.getConnection("jdbc:mysql://localhost:3306/fct_smcanteen?","root","");
         } catch (ClassNotFoundException ex) {
-            Logger.getLogger(Display.class.getName()).log(Level.SEVERE, "You have a connection problem", ex);
+            Logger.getLogger(Display2.class.getName()).log(Level.SEVERE, "You have a connection problem", ex);
         }
     
     }//mysqlconnection End
@@ -1060,7 +1060,6 @@ public final class Display extends javax.swing.JFrame {
         });
 
         tot1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        tot1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Anojan\\Desktop\\SmartCanteen\\src\\Icons\\Billing ani.gif")); // NOI18N
 
         javax.swing.GroupLayout jPanel21Layout = new javax.swing.GroupLayout(jPanel21);
         jPanel21.setLayout(jPanel21Layout);
@@ -1437,20 +1436,27 @@ public final class Display extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Display.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Display2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Display.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Display2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Display.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Display2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Display.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Display2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Display().setVisible(true);
+                new Display2().setVisible(true);
                
             }
         });
