@@ -11,6 +11,7 @@ import ClassFiles.Userinterfaces.Mainuserloginbutton;
 
 
 
+
 /**
  *
  * @author Anojan
@@ -175,7 +176,7 @@ public void save(){
             else
             {
                 JOptionPane.showConfirmDialog(null, "Not Mached UserName & PassWord");
-                 rease();
+                rease();
             }
 
         }catch(Exception ex){
@@ -189,6 +190,8 @@ public void save(){
     private void btnsaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnsaveActionPerformed
     Mainuserloginbutton op = new Mainuserloginbutton();
     op.save();
+    op.rease();
+    
     }//GEN-LAST:event_btnsaveActionPerformed
 public void rease(){
     txtusername.setText("");
@@ -196,7 +199,8 @@ public void rease(){
         txtusername.requestFocus();
 }
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        rease();
+         Mainuserloginbutton op = new Mainuserloginbutton();
+         op.rease();
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void txtusernameKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtusernameKeyPressed

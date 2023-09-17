@@ -43,14 +43,16 @@ public class Mainuserloginbutton {
                 op.userid.setText(rs.getString(1));
                 op.jLabel3.setText("Accounter's Name: "+rs.getString(2));
                 op.inputss.setText(rs.getString(4));
-                this.dispose();
+                op.dispose();
+                
             }
             else
             {
+                ep.txtusername.setText("");
+                ep.txtpassword.setText("");
+                ep.txtusername.requestFocus();
                 JOptionPane.showConfirmDialog(null, "Not Mached UserName & PassWord");
-                 ep.txtusername.setText("");
-                 ep.txtusername.setText("");
-                 ep.txtusername.requestFocus();
+                        
             }
 
         }catch(Exception ex){
@@ -58,8 +60,16 @@ public class Mainuserloginbutton {
         }
         
 }
+    
+    public void rease(){
+        Login_ ep = new Login_();
+        ep.txtusername.setText("");
+        ep.txtpassword.setText("");
+        ep.txtusername.requestFocus();
+}
+    
 
-    private void dispose() {
+    public void dispose() {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 }
