@@ -98,7 +98,7 @@ public final class AdminDasboard extends javax.swing.JFrame {
         jPanel3.setBackground(new java.awt.Color(153, 102, 255));
 
         jButton1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jButton1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Anojan\\Desktop\\SmartCanteen\\src\\Icons\\admin.png")); // NOI18N
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/FCT-SM-Canteen/Icons/admin.png"))); // NOI18N
         jButton1.setText("Admin Details    ");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -107,7 +107,7 @@ public final class AdminDasboard extends javax.swing.JFrame {
         });
 
         jButton2.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jButton2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Anojan\\Desktop\\SmartCanteen\\src\\Icons\\Staff.png")); // NOI18N
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/FCT-SM-Canteen/Icons/Staff.png"))); // NOI18N
         jButton2.setText("User Details      ");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -116,7 +116,7 @@ public final class AdminDasboard extends javax.swing.JFrame {
         });
 
         jButton3.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jButton3.setIcon(new javax.swing.ImageIcon("C:\\Users\\Anojan\\Desktop\\SmartCanteen\\src\\Icons\\details.png")); // NOI18N
+        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/FCT-SM-Canteen/Icons/details.png"))); // NOI18N
         jButton3.setText("Product Details");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -125,11 +125,11 @@ public final class AdminDasboard extends javax.swing.JFrame {
         });
 
         jButton4.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jButton4.setIcon(new javax.swing.ImageIcon("C:\\Users\\Anojan\\Desktop\\SmartCanteen\\src\\Icons\\add.png")); // NOI18N
+        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/FCT-SM-Canteen/Icons/add.png"))); // NOI18N
         jButton4.setText("Reports               ");
 
         jButton6.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jButton6.setIcon(new javax.swing.ImageIcon("C:\\Users\\Anojan\\Desktop\\SmartCanteen\\src\\Icons\\developer.png")); // NOI18N
+        jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/FCT-SM-Canteen/Icons/developer.png"))); // NOI18N
         jButton6.setText("System Info            ");
         jButton6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

@@ -152,7 +152,7 @@ public class UserAdd extends javax.swing.JFrame {
 
         rest.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         rest.setForeground(new java.awt.Color(0, 0, 51));
-        rest.setIcon(new javax.swing.ImageIcon("C:\\Users\\Anojan\\Desktop\\SmartCanteen\\src\\Icons\\Reset.png")); // NOI18N
+        rest.setIcon(new javax.swing.ImageIcon(getClass().getResource("/FCT-SM-Canteen/Icons/Reset.png"))); // NOI18N
         rest.setText("Reset");
         rest.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 0, 0), new java.awt.Color(153, 0, 0), null, null));
         rest.addActionListener(new java.awt.event.ActionListener() {
@@ -164,7 +164,7 @@ public class UserAdd extends javax.swing.JFrame {
 
         btndelete.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         btndelete.setForeground(new java.awt.Color(204, 0, 0));
-        btndelete.setIcon(new javax.swing.ImageIcon("C:\\Users\\Anojan\\Desktop\\SmartCanteen\\src\\Icons\\delete.png")); // NOI18N
+        btndelete.setIcon(new javax.swing.ImageIcon(getClass().getResource("/FCT-SM-Canteen/Icons/delete.png"))); // NOI18N
         btndelete.setText("Delete");
         btndelete.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 0, 0), new java.awt.Color(153, 0, 0), null, null));
         btndelete.addActionListener(new java.awt.event.ActionListener() {
@@ -176,7 +176,7 @@ public class UserAdd extends javax.swing.JFrame {
 
         btnup.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         btnup.setForeground(new java.awt.Color(0, 153, 0));
-        btnup.setIcon(new javax.swing.ImageIcon("C:\\Users\\Anojan\\Desktop\\SmartCanteen\\src\\Icons\\login.png")); // NOI18N
+        btnup.setIcon(new javax.swing.ImageIcon(getClass().getResource("/FCT-SM-Canteen/Icons/login.png"))); // NOI18N
         btnup.setText("Update");
         btnup.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 0, 0), new java.awt.Color(153, 0, 0), null, null));
         btnup.addActionListener(new java.awt.event.ActionListener() {
@@ -226,13 +226,13 @@ public class UserAdd extends javax.swing.JFrame {
         });
         jPanel1.add(jFormattedTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 430, 150, 30));
 
-        Search.setIcon(new javax.swing.ImageIcon("C:\\Users\\Anojan\\Desktop\\SmartCanteen\\src\\Icons\\search.png")); // NOI18N
+        Search.setIcon(new javax.swing.ImageIcon(getClass().getResource("/FCT-SM-Canteen/Icons/search.png"))); // NOI18N
         Search.setText("Search");
         jPanel1.add(Search, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 430, 90, 30));
 
         jButton2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jButton2.setForeground(new java.awt.Color(51, 51, 255));
-        jButton2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Anojan\\Desktop\\SmartCanteen\\src\\Icons\\save.png")); // NOI18N
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/FCT-SM-Canteen/Icons/save.png"))); // NOI18N
         jButton2.setText("Save");
         jButton2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 0, 0), new java.awt.Color(153, 0, 0), null, null));
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -243,7 +243,6 @@ public class UserAdd extends javax.swing.JFrame {
         jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 130, 90, 50));
 
         jButton3.setBackground(new java.awt.Color(255, 255, 204));
-        jButton3.setIcon(new javax.swing.ImageIcon("C:\\Users\\Anojan\\Desktop\\SmartCanteen\\src\\Icons\\Dj-View-icon (1).png")); // NOI18N
         jButton3.setText("Show Details");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -255,7 +254,7 @@ public class UserAdd extends javax.swing.JFrame {
         jButton4.setBackground(new java.awt.Color(255, 255, 102));
         jButton4.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jButton4.setForeground(new java.awt.Color(51, 51, 255));
-        jButton4.setIcon(new javax.swing.ImageIcon("C:\\Users\\Anojan\\Desktop\\SmartCanteen\\src\\Icons\\close Jframe.png")); // NOI18N
+        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/FCT-SM-Canteen/Icons/close Jframe.png"))); // NOI18N
         jButton4.setBorder(null);
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -266,7 +265,7 @@ public class UserAdd extends javax.swing.JFrame {
 
         jButton1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jButton1.setForeground(new java.awt.Color(0, 255, 0));
-        jButton1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Anojan\\Desktop\\SmartCanteen\\src\\Icons\\Go-back-icon.png")); // NOI18N
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/FCT-SM-Canteen/Icons/Go-back-icon.png"))); // NOI18N
         jButton1.setText("Back");
         jButton1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButton1.setBorderPainted(false);
@@ -317,8 +316,9 @@ public class UserAdd extends javax.swing.JFrame {
         PreparedStatement pst = conn.prepareStatement(sql);
 
         pst.setString(1, jTextField2.getText()); 
+        pst.setString(2, jTextField3.getText()); 
         pst.setString(3, jTextField4.getText()); 
-        pst.setString(4, jTextField5.getText()); 
+        pst.setString(4, jTextField5.getText());
         pst.setString(5, jTextField6.getText());
         pst.setString(6, jTextField1.getText());
 

@@ -164,7 +164,7 @@
                   <Font name="Segoe UI" size="18" style="1"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\Anojan\Desktop\SmartCanteen\src\Icons\admin.png"/>
+                  <Image iconType="3" name="/FCT-SM-Canteen/Icons/admin.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Admin Details    "/>
               </Properties>
@@ -178,7 +178,7 @@
                   <Font name="Segoe UI" size="18" style="1"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\Anojan\Desktop\SmartCanteen\src\Icons\Staff.png"/>
+                  <Image iconType="3" name="/FCT-SM-Canteen/Icons/Staff.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="User Details      "/>
               </Properties>
@@ -192,7 +192,7 @@
                   <Font name="Segoe UI" size="18" style="1"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\Anojan\Desktop\SmartCanteen\src\Icons\details.png"/>
+                  <Image iconType="3" name="/FCT-SM-Canteen/Icons/details.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Product Details"/>
               </Properties>
@@ -206,7 +206,7 @@
                   <Font name="Segoe UI" size="18" style="1"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\Anojan\Desktop\SmartCanteen\src\Icons\add.png"/>
+                  <Image iconType="3" name="/FCT-SM-Canteen/Icons/add.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Reports               "/>
               </Properties>
@@ -217,7 +217,7 @@
                   <Font name="Segoe UI" size="18" style="1"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\Anojan\Desktop\SmartCanteen\src\Icons\developer.png"/>
+                  <Image iconType="3" name="/FCT-SM-Canteen/Icons/developer.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="System Info            "/>
               </Properties>

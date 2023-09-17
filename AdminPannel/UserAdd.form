@@ -269,7 +269,7 @@
               <Color blue="33" green="0" red="0" type="rgb"/>
             </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\Anojan\Desktop\SmartCanteen\src\Icons\Reset.png"/>
+              <Image iconType="3" name="/FCT-SM-Canteen/Icons/Reset.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Reset"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -299,7 +299,7 @@
               <Color blue="0" green="0" red="cc" type="rgb"/>
             </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\Anojan\Desktop\SmartCanteen\src\Icons\delete.png"/>
+              <Image iconType="3" name="/FCT-SM-Canteen/Icons/delete.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Delete"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -329,7 +329,7 @@
               <Color blue="0" green="99" red="0" type="rgb"/>
             </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\Anojan\Desktop\SmartCanteen\src\Icons\login.png"/>
+              <Image iconType="3" name="/FCT-SM-Canteen/Icons/login.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Update"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -431,7 +431,7 @@
         <Component class="javax.swing.JLabel" name="Search">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\Anojan\Desktop\SmartCanteen\src\Icons\search.png"/>
+              <Image iconType="3" name="/FCT-SM-Canteen/Icons/search.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Search"/>
           </Properties>
@@ -450,7 +450,7 @@
               <Color blue="ff" green="33" red="33" type="rgb"/>
             </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\Anojan\Desktop\SmartCanteen\src\Icons\save.png"/>
+              <Image iconType="3" name="/FCT-SM-Canteen/Icons/save.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Save"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
@@ -476,9 +476,6 @@
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="cc" green="ff" red="ff" type="rgb"/>
             </Property>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\Anojan\Desktop\SmartCanteen\src\Icons\Dj-View-icon (1).png"/>
-            </Property>
             <Property name="text" type="java.lang.String" value="Show Details"/>
           </Properties>
           <Events>
@@ -502,7 +499,7 @@
               <Color blue="ff" green="33" red="33" type="rgb"/>
             </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\Anojan\Desktop\SmartCanteen\src\Icons\close Jframe.png"/>
+              <Image iconType="3" name="/FCT-SM-Canteen/Icons/close Jframe.png"/>
             </Property>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="null"/>
@@ -526,7 +523,7 @@
               <Color blue="0" green="ff" red="0" type="rgb"/>
             </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\Anojan\Desktop\SmartCanteen\src\Icons\Go-back-icon.png"/>
+              <Image iconType="3" name="/FCT-SM-Canteen/Icons/Go-back-icon.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Back"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
