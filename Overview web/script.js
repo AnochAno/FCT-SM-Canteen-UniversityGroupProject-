@@ -1,9 +1,14 @@
 document.addEventListener("DOMContentLoaded", function () {
     const teamMembers = [
-        { name: "Member 1", role: "Developer" },
-        { name: "Member 2", role: "Designer" },
-        { name: "Member 3", role: "Tester" },
-        // Add more team members as needed
+        { name: "Subanchan.K", role: "Developer" },
+        { name: "Sabeshan.A", role: "Designer" },
+        { name: "Sasikaran.S", role: "Tester" },
+        { name: "Sivavishnu.S", role: "Specalist" },
+        { name: "Thibakaran.T", role: "Tester" },
+        { name: "Keerththikan.A", role: "Tester" },
+        { name: "PriyaLakshan.K", role: "Tester" },
+        { name: "Anojan.T", role: "Tester" }
+        
     ];
 
     const teamList = document.getElementById("team-list");
