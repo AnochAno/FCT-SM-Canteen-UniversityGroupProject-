@@ -13,12 +13,12 @@ import javax.swing.JFrame;
  *
  * @author Anojan
  */
-public class AdLogin extends javax.swing.JFrame {
+public class VDLogin extends javax.swing.JFrame {
 
     /**
      * Creates new form Login_
      */
-    public AdLogin() {
+    public VDLogin() {
         initComponents();
     }
 
@@ -32,7 +32,7 @@ public class AdLogin extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jLabel4 = new javax.swing.JLabel();
+        jPanel3 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         txtusername = new javax.swing.JFormattedTextField();
         jLabel1 = new javax.swing.JLabel();
@@ -42,7 +42,7 @@ public class AdLogin extends javax.swing.JFrame {
         btnsave = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
-        jPanel3 = new javax.swing.JPanel();
+        jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -50,13 +50,9 @@ public class AdLogin extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 204));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel4.setBackground(new java.awt.Color(255, 255, 204));
-        jLabel4.setForeground(new java.awt.Color(102, 102, 255));
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/FCT-SM-Canteen/Icons/OIP.jpg"))); // NOI18N
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 400, 400));
-
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 6, -1, -1));
+
+        jPanel3.setBackground(new java.awt.Color(0, 0, 0));
 
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
         jPanel2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(102, 0, 0), new java.awt.Color(153, 0, 0), null, null));
@@ -115,24 +111,30 @@ public class AdLogin extends javax.swing.JFrame {
         jPanel2.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 310, 120, -1));
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/FCT-SM-Canteen/Icons/login ani.gif"))); // NOI18N
-        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 60, 279, -1));
+        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 40, 279, -1));
 
-        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(413, 6, 383, 400));
-
-        jPanel3.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel4.setBackground(new java.awt.Color(255, 255, 204));
+        jLabel4.setForeground(new java.awt.Color(102, 102, 255));
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/FCT-SM-Canteen/Icons/uoklogo.jpg"))); // NOI18N
+        jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, -1, -1));
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 810, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                .addContainerGap(11, Short.MAX_VALUE)
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 383, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 410, Short.MAX_VALUE)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 400, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 10, Short.MAX_VALUE))
         );
 
-        getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 0, 810, 410));
+        getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 0, 400, 410));
 
         pack();
         setLocationRelativeTo(null);
@@ -151,7 +153,7 @@ public class AdLogin extends javax.swing.JFrame {
 public void save(){
 
 
-       String sql = "SELECT * FROM `admin` WHERE AdminID=? and adPassword=?";
+        String sql = "SELECT * FROM `user` WHERE UserID=? and Passsword=?";
         try{
             Class.forName("com.mysql.cj.jdbc.Driver");
             Connection conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/fct_smcanteen","root","");
@@ -160,32 +162,39 @@ public void save(){
             pst.setString(2, txtpassword.getText());
             ResultSet rs = pst.executeQuery();
             if (rs.next()){
-                AdminDasboard op = new AdminDasboard ();
+                Display op = new Display();
                 op.setVisible(true);
                 op.pack();
                 op.setLocale(null);
                 op.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-                setVisible(false);
-               
+
+                
+                op.userid.setText(rs.getString(1));
+                op.jLabel3.setText("Accounter's Name: "+rs.getString(2));
+                op.inputss.setText(rs.getString(4));
+                this.dispose();
             }
             else
             {
                 JOptionPane.showConfirmDialog(null, "Not Mached UserName & PassWord");
-
+                 rease();
             }
 
         }catch(Exception ex){
             JOptionPane.showConfirmDialog(null, ex);
         }
 }
+public void rease(){
+txtusername.setText("");
+txtpassword.setText("");
+txtusername.requestFocus();
+}
     private void btnsaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnsaveActionPerformed
 save();
     }//GEN-LAST:event_btnsaveActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        txtusername.setText("");
-        txtpassword.setText("");
-        txtusername.requestFocus();
+rease();        
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void txtusernameKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtusernameKeyPressed
@@ -225,21 +234,23 @@ save();
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(AdLogin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(VDLogin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(AdLogin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(VDLogin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(AdLogin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(VDLogin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(AdLogin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(VDLogin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new AdLogin().setVisible(true);
+                new VDLogin().setVisible(true);
             }
         });
     }
