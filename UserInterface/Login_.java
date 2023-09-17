@@ -7,6 +7,9 @@ package UserInterface;
 import javax.swing.JOptionPane;
 import java.sql.*;
 import javax.swing.JFrame;
+import ClassFiles.Userinterfaces.Mainuserloginbutton;
+
+
 
 /**
  *
@@ -184,7 +187,8 @@ public void save(){
 
 
     private void btnsaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnsaveActionPerformed
-save();
+    Mainuserloginbutton op = new Mainuserloginbutton();
+    op.save();
     }//GEN-LAST:event_btnsaveActionPerformed
 public void rease(){
     txtusername.setText("");
@@ -261,7 +265,7 @@ public void rease(){
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
-    private javax.swing.JPasswordField txtpassword;
-    private javax.swing.JFormattedTextField txtusername;
+    public javax.swing.JPasswordField txtpassword;
+    public javax.swing.JFormattedTextField txtusername;
     // End of variables declaration//GEN-END:variables
 }
